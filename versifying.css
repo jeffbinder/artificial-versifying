@@ -1,0 +1,63 @@
+body {
+    font-family: Lora, serif;
+    font-size: 14px;
+    margin: 1px;
+}
+
+#table-area {
+    height: 277px;
+}
+
+.header {
+    font-family: 'Dancing Script', serif;
+    font-size: 200%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.table {
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.subheader {
+    text-align: center;
+}
+
+.table11 {
+    width: 187px;
+}
+.table10 {
+    width: 170px;
+}
+
+.tablecell {
+    float: left;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.blankcell {
+    background-color: black;
+}
+
+#controls-area {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#output-area {
+    font-family: 'Dancing Script', serif;
+    border: 2px solid black;
+    width: 600px;
+    height: 28px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+    font-size: 200%;
+}

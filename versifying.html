@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lora&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="versifying.css"></link>
+  <script src="jquery.js"></script>
+  <script src="versifying.js"></script>
+ </head>
+ <body>
+  <div class="content">
+    <div id="table-area"></div>
+    <div style="clear:both"></div>
+    <div id="controls-area">
+      <select id="select-version" name="version" onchange="javascript:change_version()">
+	<option value="orig">Original</option>
+	<option value="revised">Revised</option>
+	<option value="English">English</option>
+      </select>
+      <select id="select-type" name="type" onchange="javascript:change_type()" disabled="true">
+	<option value="hexameter">Hexameter</option>
+	<option value="pentameter">Pentameter</option>
+      </select>
+      <input type="checkbox" id="select-speed" name="speed" onchange="javascript:change_speed()">Fast</input>
+      <div style="clear:both"></div>
+      <input id="input" value="123456"></input>
+      <button id="generate" onclick="javascript:generate()">Generate</button>
+    </div>
+    <div id="output-area">&nbsp;</div>
+  </div>
+ </body>
+</html>
