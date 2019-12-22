@@ -83,6 +83,18 @@ function display_tables()
     }
     html = html.join("");
     $("#table-area").html(html);
+    // Hack to get tables to wrap as the window size changes.
+    var max_height = 0;
+    $(".table").each(function (i, table) {
+	var height = $(table).height();
+	console.log(height);
+	if (height > max_height) {
+	    max_height = height;
+	}
+    });
+    $(".table").each(function (i, table) {
+	$(table).height(max_height + "px");
+    });
 }
 
 function change_version()
