@@ -87,7 +87,6 @@ function display_tables()
     var max_height = 0;
     $(".table").each(function (i, table) {
 	var height = $(table).height();
-	console.log(height);
 	if (height > max_height) {
 	    max_height = height;
 	}
